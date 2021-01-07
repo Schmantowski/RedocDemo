@@ -1,7 +1,8 @@
 openapi: 3.0.1
 info:
   title: FRIDA PensionSerivce
-  description: 'This is a proof of Concept API for demonstration purposes.  You can find out more about     FRIDA at [https://www.freeinsurancedata.de/](https://www.freeinsurancedata.de/) or on [https://github.com/FRIDA-official](https://github.com/FRIDA-official). For the authorization part, you are free to use 0oa6wxz4uOexwXCoa416 as the OAuth 2.0 client '
+  description: 
+  $ref: './description1'
   termsOfService: 'https://github.com/FRIDA-official'
   contact:
     email: anton.rott@accenture.com
@@ -12,6 +13,7 @@ info:
 externalDocs:
   description: Hier folgt noch ein Verweis auf die externe Doku
   url: 'http://swagger.io'
+  
 servers:
   - url: 'https://test-api-impl-backend-jaxrs.herokuapp.com/v2/'
 paths:

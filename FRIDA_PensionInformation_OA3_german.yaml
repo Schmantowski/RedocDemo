@@ -17,7 +17,7 @@ servers:
 paths:
   /RentenKalkulation:
     post:
-      security:
+      secu
         - oAuth2:
           - RenteKalkulieren
       tags:

@@ -2,7 +2,7 @@ openapi: 3.0.1
 info:
   title: FRIDA PensionSerivce
   description: 
-  $ref: './description1'
+  $ref: 'description1.md''
   termsOfService: 'https://github.com/FRIDA-official'
   contact:
     email: anton.rott@accenture.com

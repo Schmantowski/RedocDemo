@@ -1,8 +1,8 @@
 openapi: 3.0.1
 info:
   title: FRIDA PensionSerivce
-  description: 
-  $ref: './description1'
+  description:
+    $ref: './hass.md' 
   termsOfService: 'https://github.com/FRIDA-official'
   contact:
     email: anton.rott@accenture.com
@@ -15,11 +15,12 @@ externalDocs:
   url: 'http://swagger.io'
   
 servers:
-  - url: 'https://test-api-impl-backend-jaxrs.herokuapp.com/v2/'
+  - url: 'https://test-api-impl-backend-jaxrs.herokuapp.com/v2'
 paths:
   /RentenKalkulation:
     post:
-      security:
+      summary: Nutzt oAuth2
+      security:    
         - oAuth2:
           - RenteKalkulieren
       tags:

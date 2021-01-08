@@ -1,13 +1,7 @@
 openapi: 3.0.1
 info:
   title: FRIDA PensionSerivce
-<<<<<<< HEAD
-  description:
-    $ref: './hass.md' 
-=======
-  description: 
-  $ref: 'description1.md'
->>>>>>> 1686d79d1bc712368521c56ea9e615c540857bbc
+  description: "# Overview\r\n\r\n![Cooles Diagram](./UmlSequenzdiagramm.png)\r\nGet the current weather, daily forecast for 16 days, and a\r\nthree-hour-interval forecast for 5 days for your city.\r\n\r\n## Graphics and charts\r\n\r\nHelpful stats, graphics, and this day in history charts are available for your reference.\r\n\r\n# Interactive maps\r\n\r\nInteractive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format.\r\n\r\n**Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Note**: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the `id` parameter) will provide the most precise location results."
   termsOfService: 'https://github.com/FRIDA-official'
   contact:
     email: anton.rott@accenture.com
@@ -18,18 +12,17 @@ info:
 externalDocs:
   description: Hier folgt noch ein Verweis auf die externe Doku
   url: 'http://swagger.io'
-  
 servers:
   - url: 'https://test-api-impl-backend-jaxrs.herokuapp.com/v2'
 paths:
   /RentenKalkulation:
     post:
       summary: Nutzt oAuth2
-      security:    
+      security:
         - oAuth2:
-          - RenteKalkulieren
+            - RenteKalkulieren
       tags:
-      - Kalkulierung
+        - Kalkulierung
       operationId: berechneRente
       responses:
         '200':
@@ -43,13 +36,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ErrorList'
+                $ref: '#/components/schemas/schemas-ErrorList'
         '500':
           description: Generischer Fehler
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ErrorList'
+                $ref: '#/components/schemas/schemas-ErrorList'
       requestBody:
         $ref: '#/components/requestBodies/RentenSummeRequest'
 components:
@@ -63,15 +56,15 @@ components:
       required: true
   schemas:
     Geldbetrag:
-      $ref: 'https://raw.githubusercontent.com/FRIDA-official/test-api/master/FRIDA_Basetypes_OA3.yaml#/components/schemas/Amount'
+      $ref: '#/components/schemas/Amount'
     Date:
-      $ref: 'https://raw.githubusercontent.com/FRIDA-official/test-api/master/FRIDA_Basetypes_OA3.yaml#/components/schemas/Date'
+      $ref: '#/components/schemas/schemas-Date'
     ErrorList:
-      $ref: 'https://raw.githubusercontent.com/FRIDA-official/test-api/master/FRIDA_Basetypes_OA3.yaml#/components/schemas/ErrorList'
+      $ref: '#/components/schemas/schemas-ErrorList'
     RentenSummeResponse:
       type: object
       required:
-      - summe
+        - summe
       properties:
         responseUUID:
           type: string
@@ -80,70 +73,70 @@ components:
           type: string
           format: date-time
         summe:
-          $ref: '#/components/schemas/Geldbetrag'
+          $ref: '#/components/schemas/Amount'
     RentenParameter:
       type: object
       properties:
         ArtderVersicherung:
           type: string
-          example: "rente"
+          example: rente
         DatumderStandmitteilung:
-            $ref: '#/components/schemas/Date' 
+          $ref: '#/components/schemas/schemas-Date'
         Versicherungsbeginn:
-            $ref: '#/components/schemas/Date' 
+          $ref: '#/components/schemas/schemas-Date'
         DatumRentenbeginn:
-            $ref: '#/components/schemas/Date'
+          $ref: '#/components/schemas/schemas-Date'
         aktuelleBeitragszahlungen:
-            type: number
-            format: double
+          type: number
+          format: double
         AktuellesVorsorgevermögen:
-            type: number
-            format: double
+          type: number
+          format: double
         Garantiezins:
-            type: number
-            format: double
+          type: number
+          format: double
         ausgewiesenederzeitigenÜberschussbeteiligung:
-            type: number
-            format: double
+          type: number
+          format: double
         derzeitigeGesamtverzinsung:
-            type: number
-            format: double
+          type: number
+          format: double
         HöhedergarantiertenAltersrente:
-            type: number
-            format: double
+          type: number
+          format: double
         HöhederAltersrentebeiderzeitigenÜberschussbeteiligungen:
-            type: number
-            format: double
+          type: number
+          format: double
         HöhedergarantiertenAltersrentebeiFortzahlungderderzeitigenBeiträge:
-            type: number
-            format: double
+          type: number
+          format: double
         HöhederAltersrentebeiderzeitigenÜberschussbeteiligungenbeiFortzahlungderderzeitigenBeiträge:
-            type: number
-            format: double
+          type: number
+          format: double
         FondskapitalbeiFondswachstumvonXProzentbeiRentenbeginn:
-            type: number
-            format: double
+          type: number
+          format: double
         FondskapitalbeiFondswachstumvonXProzentbeiRentenbeginnbeiFortzahlungderderzeitigenBeiträge:
-            type: number
-            format: double
+          type: number
+          format: double
         HochrechnungdesgarantiertenAltersvorsorgevermögens:
-            type: number
-            format: double
+          type: number
+          format: double
         HochrechnungdesAltersvorsorgevermögens:
-            type: number
-            format: double
+          type: number
+          format: double
         Rentenfaktor:
-            type: number
-            format: double
+          type: number
+          format: double
         AktuellerRentenfaktorjeZehnTausendEuroVorsorgeguthaben:
-            type: number
-            format: double
+          type: number
+          format: double
         GarantierterRentenfaktorjeZehnTausendEuroVorsorgeguthaben:
-            type: number
-            format: double
+          type: number
+          format: double
         aktuellejährlichgezahlteZulagen:
-            type: number
-            format: double
+          type: number
+          format: double
         zulagen:
           type: object
           properties:
@@ -162,7 +155,47 @@ components:
             geburtsDatumDerKinder:
               type: array
               items:
-                $ref: '#/components/schemas/Date'
+                $ref: '#/components/schemas/schemas-Date'
+    schemas-Date:
+      type: string
+      format: date
+      description: Date in YYYY-DD-MM Format
+    Amount:
+      type: object
+      properties:
+        sum:
+          type: number
+          format: double
+        currency:
+          type: string
+          format: string
+          example: EUR
+    schemas-ErrorList:
+      type: object
+      required:
+        - errors
+      properties:
+        errors:
+          type: array
+          items:
+            type: object
+            required:
+              - code
+              - title
+              - detail
+            properties:
+              code:
+                type: string
+                description: The code of the error
+              title:
+                type: string
+                description: A displayable title of the error type
+              detail:
+                type: string
+                description: Detail of the error
+              meta:
+                type: object
+                description: Optional additional data for specific error types
   securitySchemes:
     oAuth2:
       type: oauth2

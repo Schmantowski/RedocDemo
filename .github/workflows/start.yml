@@ -14,7 +14,7 @@ container:
             description: "Path to results file"
     steps:
         shell: bash
-            -run: for filename in *.yaml; 
+            run: for filename in *.yaml; 
                  do 
                     openapi bundle -o ./dist/$filename $filename;
                  done

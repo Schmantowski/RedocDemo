@@ -1,10 +1,12 @@
 name: start
 on: [push]
-jobs:
-  check-bats-version:
-    runs-on: from jonasknebel/resolver_for_yaml_dependencies
-    steps:
-        - run: for filename in ./*.yaml; 
-                do 
-                    openapi bundle -o ./dist/$filename $filename;
-                done
+    jobs:
+    container:
+        runs-on: ubuntu-latest
+        container: jonasknebel/resolver_for_yaml_dependencies:latest
+        steps:
+            - run: for filename in ./*.yaml; 
+                    do 
+                        openapi bundle -o ./dist/$filename $filename;
+                    done
+             name: Run in Container

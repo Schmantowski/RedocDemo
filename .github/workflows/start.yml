@@ -4,7 +4,7 @@ jobs:
     SolveDeps:
         runs-on: ubuntu-latest
         container: jonasknebel/resolver_for_yaml_dependencies:latest
-        steps: 
-            - run: for filename in *.yaml; do openapi bundle -o ./dist/$filename $filename; done
+        steps:
+            - run: ls
             name: run in container
         

@@ -17,7 +17,8 @@ RUN # update \
     # npm installs automatically 
     npm -v \
     npm install -g redoc-cli \
-    npm install -g @redocly/openapi-cli 
+    npm install -g @redocly/openapi-cli \
+    sudo apt-get install git
 
 ADD start.bash /start.bash
 

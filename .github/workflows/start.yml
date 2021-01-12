@@ -5,8 +5,11 @@ container:
     runs-on: ubuntu-latest
     container: jonasknebel/resolver_for_yaml_dependencies:latest
     steps:
-        - run: for filename in ./*.yaml; 
-                do 
+        - uses: *.yaml 
+        - shell: bash
+            run: for filename in ./*.yaml; 
+                 do 
                     openapi bundle -o ./dist/$filename $filename;
-                done
+                 done
+        - uses 
          name: Run in Container

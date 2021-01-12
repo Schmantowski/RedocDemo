@@ -1,17 +1,12 @@
 name: start
-'on':
-  - push
+on: [push]
 jobs:
-  runs-on: ubuntu-latest
-  container: 'jonasknebel/resolver_for_yaml_dependencies:latest'
-  inputs:
-    file-path:
-      description: Path to yaml files
-      required: true
-  outputs:
-    results-file:
-      description: Path to results file
-  steps:
-    - run: >-
-        for filename in *.yaml; do openapi bundle -o ./dist/$filename $filename;
-        done
+    runs-on: ubuntu-latest
+    container: jonasknebel/resolver_for_yaml_dependencies:latest
+    steps: 
+        - run: for filename in *.yaml; 
+                do 
+                openapi bundle -o ./dist/$filename $filename;
+                done
+          name: run in container
+        

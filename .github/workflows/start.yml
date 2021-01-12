@@ -6,8 +6,5 @@ jobs:
         container: jonasknebel/resolver_for_yaml_dependencies:latest
         steps:
             - name: check yaml files
-              uses: /*.yaml
+              uses: /*.yml
             - run: for filename in *.yaml; do openapi bundle -o ./dist/$filename $filename; done
-
-
-        

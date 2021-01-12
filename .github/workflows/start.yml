@@ -5,7 +5,6 @@ jobs:
         runs-on: ubuntu-latest
         container: jonasknebel/resolver_for_yaml_dependencies:latest
         steps:
-        - name: resolve yaml dependencies
         - uses: actions/checkout@v2
         - run: for filename in ./*.yml; do openapi bundle -o ./dist/$filename $filename; done
         - name: Commit files # transfer the new html files back into the repository

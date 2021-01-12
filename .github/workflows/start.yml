@@ -4,6 +4,6 @@ jobs:
     SolveDeps:
         runs-on: ubuntu-latest
         container: jonasknebel/resolver_for_yaml_dependencies:latest
-        run: ls
-        name: run in container
+        steps:
+            - run: ls
         

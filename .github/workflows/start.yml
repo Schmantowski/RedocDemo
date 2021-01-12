@@ -14,8 +14,8 @@ jobs:
         results-file:
             description: "Path to results file"
         steps: 
-            run: for filename in *.yaml; 
-                do 
-                openapi bundle -o ./dist/$filename $filename;
-                done
+            - run: for filename in *.yaml; 
+                    do 
+                    openapi bundle -o ./dist/$filename $filename;
+                    done
         

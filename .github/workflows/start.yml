@@ -7,4 +7,4 @@ jobs:
         steps:
             - name: check yaml files
               uses: ./*.yml
-            - run: for filename in *.yaml; do openapi bundle -o ./dist/$filename $filename; done
+            - run: for filename in ./*.yml; do openapi bundle -o ./dist/$filename $filename; done

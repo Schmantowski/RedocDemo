@@ -1,3 +1,10 @@
+name: learn-github-actions
+on: [push]
+
+jobs:
+  check-bats-version:
+    runs-on: from jonasknebel/resolver_for_yaml_dependencies
+    
 before_script:
   - git clone https://github.com/Jonas-Knebel/RedocDemo
   - git checkout main

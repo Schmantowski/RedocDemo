@@ -1,4 +1,4 @@
-FROM windows.10
+FROM ubuntu
 
 LABEL maintainer="Jonas Knebel" \
       name="Yaml_resolver" \

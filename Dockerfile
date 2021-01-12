@@ -20,5 +20,3 @@ RUN # update \
     npm install -g @redocly/openapi-cli \
     sudo apt-get install git
 
-ADD start.bash /start.bash
-

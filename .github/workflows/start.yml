@@ -5,6 +5,6 @@ jobs:
         runs-on: ubuntu-latest
         container: jonasknebel/resolver_for_yaml_dependencies:latest
         steps:
-            - run: ls
+            run: ls
             name: run in container
         

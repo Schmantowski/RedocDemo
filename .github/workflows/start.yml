@@ -1,7 +1,6 @@
 name: start
 on: [push]
 jobs:
-    container:
     runs-on: ubuntu-latest
     container: jonasknebel/resolver_for_yaml_dependencies:latest
     inputs:

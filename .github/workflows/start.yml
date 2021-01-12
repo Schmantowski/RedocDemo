@@ -11,5 +11,4 @@ container:
                  do 
                     openapi bundle -o ./dist/$filename $filename;
                  done
-        - uses 
-         name: Run in Container
+        name: Run in Container

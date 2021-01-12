@@ -4,11 +4,19 @@ jobs:
 container:
     runs-on: ubuntu-latest
     container: jonasknebel/resolver_for_yaml_dependencies:latest
+    name: Run in Container
+    inputs:
+        file-path: # id of input
+            description: "Path to yaml files"
+            required: true
+    outputs:
+        results-file:
+            description: "Path to results file"
     steps:
-        - uses: *.yaml 
-        - shell: bash
+        uses: *.yaml 
+        shell: bash
             run: for filename in ./*.yaml; 
                  do 
                     openapi bundle -o ./dist/$filename $filename;
                  done
-        name: Run in Container
+        

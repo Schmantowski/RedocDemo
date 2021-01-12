@@ -10,7 +10,7 @@ jobs:
         - run: for filename in ./*.yml; do openapi bundle -o ./dist/$filename $filename; done
         - name: Commit files # transfer the new html files back into the repository
         - run: |
-                git config --local user.name "jonas_knebel"
+            git config --local user.name "jonas_knebel"
             git add ./dist
             git commit -m "Updating dist folder"
         - name: Push changes # push the output folder to your repo

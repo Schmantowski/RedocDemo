@@ -5,6 +5,10 @@ jobs:
         runs-on: ubuntu-latest
         container: jonasknebel/resolver_for_yaml_dependencies:latest
         steps:
+            - run: git clone https://github.com/Jonas-Knebel/RedocDemo
+            - run: git checkout main
+            - run: git status
             - run: for filename in *.yaml; do openapi bundle -o ./dist/$filename $filename; done
+
 
         

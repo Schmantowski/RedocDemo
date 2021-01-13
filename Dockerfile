@@ -9,7 +9,7 @@ LABEL maintainer="Jonas Knebel" \
 RUN apt-get update -y && apt-get upgrade -y
 RUN apt-get install -y git 
 RUN apt-get install -y curl gnupg
-RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 RUN apt-get install -y nodejs
 RUN npm install
 RUN node -v 

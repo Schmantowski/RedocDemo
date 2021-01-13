@@ -6,7 +6,7 @@ LABEL maintainer="Jonas Knebel" \
       name="Yaml_resolver" \
       version="0.0"
 
-RUN apt-get update -y && apt-get upgrade -y
+
 RUN apt-get install -y curl gnupg
 RUN apt-get install -y build-essential
 RUN sudo apt-get install nodejs -yq
@@ -15,5 +15,4 @@ RUN node -v
 RUN npm -v 
 RUN npm install -g redoc-cli 
 RUN npm install -g @redocly/openapi-cli
-RUN apt-get update -y && apt-get upgrade -y && apt-get autoremove -y 
 

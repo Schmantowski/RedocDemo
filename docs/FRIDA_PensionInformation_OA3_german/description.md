@@ -1,8 +1,7 @@
  # Overview 123
       
-
     <img
-    src="./resources/UmlSequenzdiagramm.png"
+    src="docs/FRIDA_PensionInformation_OA3_german/resources/UmlSequenzdiagramm.png"
     width=1000em height=500em>  
 
 

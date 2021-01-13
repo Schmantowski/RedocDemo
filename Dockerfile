@@ -5,7 +5,9 @@ LABEL maintainer="Jonas Knebel" \
       version="0.0"
 
 RUN # update \
-    apt-get update \
+    apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y git \
     # install curl 
     apt-get install curl \
     # get install script and pass it to execute: 
@@ -18,5 +20,4 @@ RUN # update \
     npm -v \
     npm install -g redoc-cli \
     npm install -g @redocly/openapi-cli \
-    sudo apt-get install git
 

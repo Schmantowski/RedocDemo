@@ -1,7 +1,6 @@
 FROM ubuntu
 USER root
 WORKDIR /home/app
-COPY ./package.json /home/app/package.json
 
 LABEL maintainer="Jonas Knebel" \
       name="Yaml_resolver" \

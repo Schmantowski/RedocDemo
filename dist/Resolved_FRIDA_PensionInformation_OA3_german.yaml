@@ -3,12 +3,19 @@ info:
   title: FRIDA PensionSerivce
   description: >-
     # Overview 123
+    
+    ## User
       
-
     <img
-    src="../docs/FRIDA_PensionInformation_OA3_german/resources/UmlSequenzdiagramm.png"
+    src="../docs/FRIDA_PensionInformation_OA3_german/resources/User.png"
+    width=1000em height=500em>
+    
+    
+    ## UML  
+ 
+    <img
+    src="../docs/FRIDA_PensionInformation_OA3_german/resources/Diagramm.png"
     width=1000em height=500em>  
-
 
     Get the current weather, daily forecast for 16 days, and a
 

@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM timbru31/node-alpine-git
 USER root
 WORKDIR /home/app
 
@@ -7,11 +7,9 @@ LABEL maintainer="Jonas Knebel" \
       version="0.0"
 
 RUN apt-get update -y && apt-get upgrade -y
-RUN apt-get install -y git 
 RUN apt-get install -y curl gnupg
 RUN apt-get install -y build-essential
-RUN curl -sL https://deb.nodesource.com/setup_current.x | sudo -E bash -
-RUN sudo apt-get install -y nodejs
+RUN sudo apt-get install nodejs -yq
 RUN npm install
 RUN node -v 
 RUN npm -v 

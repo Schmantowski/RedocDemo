@@ -11,7 +11,7 @@ jobs:
                 path: main
           - name: Print yamls
             with:
-                path: /*.yaml
+                path: *.yaml
                 - run: echo $TEXT
            
      

@@ -13,11 +13,11 @@ jobs:
         - name: clear Dist folder
           run: git rm -r dist/
         - name: Remove Dist
-        - run: git commit -a -m "Removed Dist"
+          run: git commit -a -m "Removed Dist"
         - name: Push
-        - run: git push
+          run: git push
         - name: Pull
-        - run: git pull
+          run: git pull
         - name: Create local changes
           run: for filename in ./*.yaml; do redoc-cli bundle -o ./dist/${filename:2:$((${#filename})) - 7}.html $filename; done        
         - name: Add Files

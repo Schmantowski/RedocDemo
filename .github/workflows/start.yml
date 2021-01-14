@@ -2,12 +2,14 @@ name: start
 on: [push]
 jobs:
     build:
-        runs-on: docker
+        runs-on: ubuntu-20.04
         container: 
-            image: jonasknebel/resolver_for_yaml_dependencies:latest
+            image: timbru31/node-alpine-git    
         steps:
-         
-        - uses: actions/checkout@v2
+        - name: Setup openapi
+          run: npm install -g @redocly/openapi-cli
+        - name: checkout@v2
+          uses: actions/checkout@v2
           with:
             persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
             fetch-depth: 0 # otherwise, you will failed to push refs to dest repo

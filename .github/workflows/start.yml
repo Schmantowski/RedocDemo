@@ -11,7 +11,7 @@ jobs:
             persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
             fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
         - name: Create local changes
-          run: for filename in ./*.yaml; do openapi bundle -o ./dist/$filename $filename; done        
+          run: for filename in ./*.yaml; do redoc-cli bundle -o ./dist/$filename.html $filename; done        
         - name: Add Files
           run: git add dist/*
         - name: Commit files

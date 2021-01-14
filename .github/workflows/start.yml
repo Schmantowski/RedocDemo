@@ -2,7 +2,7 @@ name: start
 on: [push]
 jobs:
     SolveDeps:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
         container: jonasknebel/resolver_for_yaml_dependencies:latest
         steps:
         - name: Checkout

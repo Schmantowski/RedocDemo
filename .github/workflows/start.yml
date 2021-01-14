@@ -5,11 +5,10 @@ jobs:
         runs-on: ubuntu-latest
         container: jonasknebel/resolver_for_yaml_dependencies:latest
         steps:
-            steps:
-              - name: Read package.json
-                id: package
-                uses: juliangruber/read-file-action@v1
-                with:
-                  path: ./package.json
-              - name: Echo package.json
+          - name: Read package.json
+            id: package
+            uses: juliangruber/read-file-action@v1
+            with:
+              path: ./package.json
+          - name: Echo package.json
      

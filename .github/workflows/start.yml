@@ -11,8 +11,6 @@ jobs:
             fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
         - name: Create local changes
           run: for filename in ./*.yaml; do redoc-cli bundle -o ./dist/${filename:0:$((${#filename})) - 5}.html $filename; done        
-        - name: Add Files
-          run: git add dist/*
         - name: Commit files
           run: |
             git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"

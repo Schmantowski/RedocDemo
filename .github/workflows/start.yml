@@ -6,6 +6,8 @@ jobs:
         container: 
             image: timbru31/node-alpine-git    
         steps:
+        - name: Setup NODE
+          run: npm install 
         - name: Setup openapi1
           run: npm install -g redoc-cli 
         - name: Setup openapi

@@ -2,14 +2,15 @@
 
 ## Use-Case
 <img
-src="../docs/FRIDA_PensionInformation_OA3_german/resources/Diagramm.png"
-width=1000em height=500em>    
+src="../docs/FRIDA_PensionInformation_OA3_german/resources/User.png">    
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 ## Sequenzdiagramm
 <img
-src="..docs/FRIDA_PensionInformation_OA3_german/resources/UmlSequenzdiagramm.png" width=1000em height=500em>  
+src="../docs/FRIDA_PensionInformation_OA3_german/resources/Diagramm.png">  
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 Get the current weather, daily forecast for 16 days, and a
 
@@ -21,6 +22,11 @@ three-hour-interval forecast for 5 days for your city.
 Helpful stats, graphics, and this day in history charts are available for
 your reference. 
 
+## Sequenzdiagramm
+<img
+src="../docs/FRIDA_PensionInformation_OA3_german/resources/BPMN.png">  
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 # Interactive maps
 
@@ -59,10 +65,11 @@ in educere regia, fata.
 
 
 1. Pone levius
-
+   
 2. Quos optato et haerent declinat erat sub
-
-3. Vel penetralia tendens difficilem
+3. Vel penetralia tendens difficilem 
+4.  sed diam nonumy eirmod tempor invidunt 
+5.   sed diam nonumy eirmod tempor invidunt 
 
 
 ## Telum sensit

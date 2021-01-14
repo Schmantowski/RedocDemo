@@ -2,8 +2,9 @@ name: start
 on: [push]
 jobs:
     build:
-        uses: jonasknebel/resolver_for_yaml_dependencies:latest
-        shell: bash
+        runs-on: ubuntu-20.04
+        container: 
+            image: jonasknebel/resolver_for_yaml_dependencies:latest
         steps:
         - uses: actions/checkout@v2
           with:

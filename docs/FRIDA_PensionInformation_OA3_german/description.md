@@ -2,15 +2,14 @@
 
 ## Use-Case
 <img
-src="docs/FRIDA_PensionInformation_OA3_german/resources/Diagramm.png"
+src="../docs/FRIDA_PensionInformation_OA3_german/resources/Diagramm.png"
 width=1000em height=500em>    
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 ## Sequenzdiagramm
 <img
-src="docs/FRIDA_PensionInformation_OA3_german/resources/UmlSequenzdiagramm.png"
-width=1000em height=500em>  
+src="..docs/FRIDA_PensionInformation_OA3_german/resources/UmlSequenzdiagramm.png" width=1000em height=500em>  
 
 Get the current weather, daily forecast for 16 days, and a
 

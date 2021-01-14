@@ -2,7 +2,7 @@ name: start
 on: [push]
 jobs:
     build:
-        runs-on: ubuntu-20.04
+        runs-on: ubuntu-18.04
         container: 
             image: jonasknebel/resolver_for_yaml_dependencies:latest     
         steps:
@@ -11,7 +11,7 @@ jobs:
             persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
             fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
         - name: Create local changes
-          run: for filename in ./*.yaml; do redoc-cli bundle -o dist/${filename:2:$((${#filename})) - 7}.html $filename; done        
+          run: for filename in ./*.yaml; do redoc-cli bundle -o ./dist/${filename:2:$((${#filename})) - 7}.html $filename; done        
         - name: Add Files
           run: git add dist/*
         - name: Commit files

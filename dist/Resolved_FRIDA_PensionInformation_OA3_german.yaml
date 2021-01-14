@@ -4,18 +4,19 @@ info:
   description: >-
     # Overview 123
     
+
     ## User
       
     <img
     src="../docs/FRIDA_PensionInformation_OA3_german/resources/User.png"
-    width=1000em height=500em>
+    width=80% height=80% class="center">
     
     
     ## UML  
  
     <img
     src="../docs/FRIDA_PensionInformation_OA3_german/resources/Diagramm.png"
-    width=1000em height=500em>  
+    width=100% height=100% class="center">  
 
     Get the current weather, daily forecast for 16 days, and a
 

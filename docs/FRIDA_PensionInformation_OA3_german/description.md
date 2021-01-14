@@ -22,7 +22,7 @@ three-hour-interval forecast for 5 days for your city.
 Helpful stats, graphics, and this day in history charts are available for
 your reference. 
 
-## Sequenzdiagramm
+## BPMN
 <img
 src="../docs/FRIDA_PensionInformation_OA3_german/resources/BPMN.png">  
 

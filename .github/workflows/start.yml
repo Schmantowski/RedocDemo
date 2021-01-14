@@ -5,7 +5,6 @@ jobs:
         runs-on: ubuntu-20.04
         container: 
             image: jonasknebel/resolver_for_yaml_dependencies:latest
-            shell: bash
         steps:
          
         - uses: actions/checkout@v2

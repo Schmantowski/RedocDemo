@@ -5,7 +5,6 @@ jobs:
         runs-on: ubuntu-20.04
         container: jonasknebel/resolver_for_yaml_dependencies:latest
         steps:
-        - name: Checkout
           uses: actions/checkout@v2
           with:
             persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
@@ -23,7 +22,5 @@ jobs:
           uses: ad-m/github-push-action@master
           with:
             github_token: ${{ secrets.GIT_TOKEN }}
-            branch: ${{ github.ref }}
-            force: true
-           
+            branch: ${{ github.ref }}         
      

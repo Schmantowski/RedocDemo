@@ -6,7 +6,7 @@ jobs:
         container: jonasknebel/resolver_for_yaml_dependencies:latest
         steps:
           - name: Checkout
-          - uses: action/chechkout@v2
-          - run: ls
+            uses: action/chechkout@v2
+            run: ls
            
      

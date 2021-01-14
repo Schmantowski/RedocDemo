@@ -5,11 +5,8 @@ jobs:
         runs-on: ubuntu-latest
         container: jonasknebel/resolver_for_yaml_dependencies:latest
         steps:
-          - name: Read package.json
-            id: package
-            uses: juliangruber/read-file-action@v1
-            with:
-              path: ./package.json
-          - name: Echo package.json
-            run: echo ${{ steps.package.outputs.content }}
+          - name: Checkout
+          - uses: action/chechkout@v2
+          - run: ls
+           
      

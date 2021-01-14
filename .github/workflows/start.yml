@@ -7,6 +7,8 @@ jobs:
             image: timbru31/node-alpine-git    
         steps:
         - name: Setup openapi
+          run: npm install -g redoc-cli 
+        - name: Setup openapi
           run: npm install -g @redocly/openapi-cli
         - name: checkout@v2
           uses: actions/checkout@v2

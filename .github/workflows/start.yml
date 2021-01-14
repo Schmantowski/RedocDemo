@@ -6,7 +6,7 @@ jobs:
         container: jonasknebel/resolver_for_yaml_dependencies:latest
         steps:
           - name: Checkout
-            uses: action/checkout@v2
+            uses: RedocDemo/checkout@v2
           - name: Print
             run: ls
            

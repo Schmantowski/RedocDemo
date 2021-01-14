@@ -10,8 +10,8 @@ jobs:
             with:
                 path: main
           - name: Content
-            run: cd main
-            run: ls
+            run: cd main         
           - name: Resolve Yaml Files
+            run: ls
            
      

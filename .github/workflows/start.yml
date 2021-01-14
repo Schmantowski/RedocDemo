@@ -9,9 +9,9 @@ jobs:
             uses: actions/checkout@v2
             with:
                 path: main
-          - name: Content
-            run: git checkout main
-          - name: da
-            run: ls
+          - name: Print yamls
+            with:
+                path: /*.yaml
+                - run: echo $TEXT
            
      

@@ -1,6 +1,4 @@
 FROM timbru31/node-alpine-git
-USER root
-WORKDIR /home/app
 
 LABEL maintainer="Jonas Knebel" \
       name="Yaml_resolver" \

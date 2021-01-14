@@ -2,15 +2,13 @@ name: start
 on: [push]
 jobs:
     build:
-        runs-on: ubuntu-20.04
-        container: jonasknebel/resolver_for_yaml_dependencies:latest
+        uses: jonasknebel/resolver_for_yaml_dependencies:latest
+        shell: bash
         steps:
         - uses: actions/checkout@v2
           with:
             persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
             fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-        - name: test
-          run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
         - name: Create local changes
           run: for filename in ./*.yaml; do redoc-cli bundle -o ./dist/${filename:0:$((${#filename})) - 5}.html $filename; done        
         - name: Add Files

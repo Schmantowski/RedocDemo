@@ -13,7 +13,7 @@ jobs:
         - name: Create local changes
           run: for filename in ./*.yaml; do openapi bundle -o ./dist/$filename $filename; done        
         - name: Add Files
-          run: git add dist/\*
+          run: git add dist/*
         - name: Commit files
           run: |
             git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"

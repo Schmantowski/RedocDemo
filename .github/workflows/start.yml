@@ -15,7 +15,7 @@ jobs:
         - name: das
           run: mkdir sad
         - name: Add Files
-          run: git add dist/*
+          run: git add *
         - name: Commit files
           run: |
             git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"

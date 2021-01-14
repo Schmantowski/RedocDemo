@@ -14,6 +14,8 @@ jobs:
           run: for filename in ./*.yaml; do redoc-cli bundle -o ./dist/${filename:2:$((${#filename})) - 7}.html $filename; done        
         - name: Add Files.
           run: git add dist/*
+        - name: javascript stuff
+          run: npm init -y
         - name: Commit files
           run: |
             git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -5,15 +5,11 @@ jobs:
         runs-on: ubuntu-latest
         container: jonasknebel/resolver_for_yaml_dependencies:latest
         steps:
-        - uses: actions/checkout@v2
-        - run: for filename in ./*.yml; do openapi bundle -o ./dist/$filename $filename; done
-        - name: Commit files # transfer the new html files back into the repository
-        - run: |
-            git config --local user.name "jonas_knebel"
-            git add ./dist
-            git commit -m "Updating dist folder"
-        - name: Push changes # push the output folder to your repo
-        - uses: ad-m/github-push-action@master
-        - with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            force: true
+            steps:
+              - name: Read package.json
+                id: package
+                uses: juliangruber/read-file-action@v1
+                with:
+                  path: ./package.json
+              - name: Echo package.json
+     

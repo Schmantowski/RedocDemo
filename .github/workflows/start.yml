@@ -2,7 +2,7 @@ name: start
 on: [push]
 jobs:
     build:
-        runs-on: ubuntu-20.04
+        runs-on: docker
         container: 
             image: jonasknebel/resolver_for_yaml_dependencies:latest
         steps:

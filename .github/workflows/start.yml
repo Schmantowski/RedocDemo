@@ -1,7 +1,7 @@
 name: start
 on: [push]
 jobs:
-    build:
+    generate_html:
         runs-on: ubuntu-20.04
         container: 
             image: jonasknebel/resolver_for_yaml_dependencies:latest     
@@ -28,14 +28,14 @@ jobs:
     repo-sync:
         runs-on: ubuntu-latest
         steps:
-        - uses: actions/checkout@v2
+        - uses: actions/checkout@master
           with:
             persist-credentials: false
         - name: repo-sync
-          uses: repo-sync/github-sync@v2
+          uses: repo-sync/github-sync@master
           with:
-            source_repo: ""
-            source_branch: ""
-            destination_branch: ""
+            source_repo: "Jonas-Knebel/RedocDemo"
+            source_branch: "master"
+            destination_branch: "master"
             github_token: ${{ secrets.PAT }}
          

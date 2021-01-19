@@ -36,6 +36,6 @@ jobs:
           with:
             source_repo: "Jonas-Knebel/RedocDemo"
             source_branch: "master"
-            destination_branch: "master"
+            destination_branch: "gh-pages"
             github_token: ${{ secrets.GITHUB_TOKEN }}
          

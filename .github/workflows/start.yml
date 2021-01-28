@@ -39,5 +39,6 @@ jobs:
             destination_branch: "gh-pages"
             github_token: ${{ secrets.GITHUB_TOKEN }}
         - name: Update github pages
-          run: git subtree push --prefix dist origin gh-pages --force
+          run: git push origin `git subtree split --prefix build_folder master`:gh-pages --force
+          
          

@@ -1,7 +1,7 @@
 name: start
 on: [push]
 jobs:
-    Generate Github pages of the yaml files:
+    generate Github pages of the yaml files:
         runs-on: ubuntu-20.04
         container: 
             image: jonasknebel/resolver_for_yaml_dependencies:latest     

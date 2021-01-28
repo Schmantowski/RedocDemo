@@ -40,6 +40,8 @@ jobs:
           with:
             persist-credentials: false
             fetch-depth: 0
+        - name: Pull
+          run: git pull
         - name: Delete HTML on Master
           run: git rm --cached -r docs/*.html
         - name: Add Files

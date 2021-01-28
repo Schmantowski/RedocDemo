@@ -23,7 +23,8 @@ jobs:
           uses: ad-m/github-push-action@master
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            branch: ${{ github.ref }}           
+            branch: ${{ github.ref }}     
+ 
         - name: Checkout
           uses: actions/checkout@master
           with:
@@ -32,7 +33,8 @@ jobs:
           uses: peaceiris/actions-gh-pages@v3
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./docs    
+            publish_dir: ./docs
+         
         - name: Checkout
           uses: actions/checkout@master
           with:

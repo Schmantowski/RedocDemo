@@ -43,7 +43,7 @@ jobs:
         - name: Pull
           run: git pull
         - name: Delete HTML on Master
-          run: git rm --cached -r docs/*.html
+          run: git rm docs/*.html
         - name: Add Files
           run: git add docs/*
         - name: Commit files

@@ -34,7 +34,11 @@ jobs:
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
             publish_dir: ./docs
-            
+         
+        - name: Checkout
+          uses: actions/checkout@master
+          with:
+            persist-credentials: false         
         - name: Delete HTML on Master
           run: git rm --cached -r docs/*.html
         - name: Add Files

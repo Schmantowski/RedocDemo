@@ -35,5 +35,5 @@ jobs:
             github_token: ${{ secrets.GITHUB_TOKEN }}
             publish_dir: ./docs
             allow_empty_commit: true
-            enable_jekyll: true
+            force_orphan: true
          

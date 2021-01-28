@@ -36,9 +36,10 @@ jobs:
             publish_dir: ./docs
          
         - name: Checkout
-          uses: actions/pull@master
+          uses: actions/checkout@master
           with:
-            persist-credentials: false         
+            persist-credentials: false
+            fetch-depth: 0
         - name: Delete HTML on Master
           run: git rm --cached -r docs/*.html
         - name: Add Files

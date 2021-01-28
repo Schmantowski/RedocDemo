@@ -25,10 +25,8 @@ jobs:
             github_token: ${{ secrets.GITHUB_TOKEN }}
             branch: ${{ github.ref }}   
         - name: gh-pages sync
-          run: git push origin `git subtree split --prefix /dist/* master 2> /dev/null`:gh-pages --force
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            branch: ${{ github.ref }}   
+          run: git subtree push --prefix dist/* origin gh-pages --force
+          
 
           
          

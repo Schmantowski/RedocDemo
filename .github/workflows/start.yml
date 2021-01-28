@@ -24,10 +24,8 @@ jobs:
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
             branch: ${{ github.ref }}   
-        - name: install gulp
-          run: npm i gulp-gh-pages
-        - name: gulp deploy
-          run: gulp deploy
-       
+        - name: gh-pages sync
+          run: git push origin `git subtree split --prefix /dist/* master 2> /dev/null`:gh-pages --force
+
           
          

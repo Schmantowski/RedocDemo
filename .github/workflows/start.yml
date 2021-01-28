@@ -24,6 +24,20 @@ jobs:
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
             branch: ${{ github.ref }}
+            
+        repo-sync:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@master
+          with:
+            persist-credentials: false
+        - name: repo-sync
+          uses: repo-sync/github-sync@master
+          with:
+            source_repo: "Jonas-Knebel/RedocDemo"
+            source_branch: "master"
+            destination_branch: "gh-pages"
+            github_token: ${{ secrets.GITHUB_TOKEN }}
            
 
           

@@ -33,8 +33,7 @@ jobs:
           uses: peaceiris/actions-gh-pages@v3
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./docs
-            publish_dir: ./documents
+            publish_dir: ./docs ; ./documents
             allow_empty_commit: true
             force_orphan: true
          

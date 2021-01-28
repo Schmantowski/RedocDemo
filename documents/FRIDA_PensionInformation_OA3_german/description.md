@@ -2,14 +2,14 @@
 ## Use-Cases
 
 <img
-src="../documents/FRIDA_PensionInformation_OA3_german/resources/User.png">    
+src="https://github.com/Jonas-Knebel/RedocDemo/blob/master/documents/FRIDA_PensionInformation_OA3_german/resources/User.png">    
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 ## Sequenzdiagramm
 
 <img
-src="../documents/FRIDA_PensionInformation_OA3_german/resources/Diagramm.png">  
+src="https://github.com/Jonas-Knebel/RedocDemo/blob/master/documents/FRIDA_PensionInformation_OA3_german/resources/Diagramm.png">  
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
@@ -25,7 +25,7 @@ your reference.
 
 ## BPMN
 <img
-src="../documents/FRIDA_PensionInformation_OA3_german/resources/BPMN.png">  
+src="https://github.com/Jonas-Knebel/RedocDemo/blob/master/documents/FRIDA_PensionInformation_OA3_german/resources/BPMN.png">  
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 

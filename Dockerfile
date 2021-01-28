@@ -14,4 +14,5 @@ RUN node -v
 RUN npm -v 
 RUN npm install -g redoc-cli 
 RUN npm install -g @redocly/openapi-cli
+RUN apt-get update && apt-get install -y rsync
 

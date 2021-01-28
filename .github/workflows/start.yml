@@ -36,7 +36,7 @@ jobs:
             publish_dir: ./docs
          
         - name: Checkout
-          uses: actions/checkout@master
+          uses: actions/pull@master
           with:
             persist-credentials: false         
         - name: Delete HTML on Master

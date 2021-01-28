@@ -1,5 +1,5 @@
 # Overview 
-## Use-Cases
+## Use-Case
 
 <img
 src="../documents/FRIDA_PensionInformation_OA3_german/resources/User.png">    

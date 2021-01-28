@@ -31,7 +31,7 @@ jobs:
             persist-credentials: false
         - name: Install rsync 📚
           run: |
-            apt-get update && apt-get install -y rsync
+            npm i rsync
         - name: Deploy 🚀
           uses: JamesIves/github-pages-deploy-action@3.6.2
           with:

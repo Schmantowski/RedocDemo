@@ -20,7 +20,6 @@ paths:
   /RentenKalkulation:
     description: 
       $ref: './docs/FRIDA_PensionInformation_OA3_german/descriptionAuth.md'
-    description: 
       $ref: './docs/FRIDA_PensionInformation_OA3_german/descriptionAuth.md'      
     post:
       summary: Nutzt oAuth2     

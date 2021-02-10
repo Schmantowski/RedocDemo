@@ -19,11 +19,10 @@ servers:
 paths:
   /RentenKalkulation:
     description: 
-      $ref: './docs/FRIDA_PensionInformation_OA3_german/descriptionAuth.md'
-      $ref: './docs/FRIDA_PensionInformation_OA3_german/descriptionAuth.md'      
+      $ref: './docs/FRIDA_PensionInformation_OA3_german/descriptionCase.md'      
     post:
       summary: Nutzt oAuth2     
-      security: 
+      security:
         - oAuth2:
           - RenteKalkulieren
               

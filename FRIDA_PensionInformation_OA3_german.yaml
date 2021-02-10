@@ -18,8 +18,6 @@ servers:
   - url: 'https://test-api-impl-backend-jaxrs.herokuapp.com/v2'
 paths:
   /RentenKalkulation:
-    description: 
-      $ref: './docs/FRIDA_PensionInformation_OA3_german/descriptionCase.md'      
     post:
       summary: Nutzt oAuth2     
       security:

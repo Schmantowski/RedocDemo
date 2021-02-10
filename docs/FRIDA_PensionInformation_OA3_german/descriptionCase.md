@@ -1,3 +1,4 @@
+## Use-Case 1:
 <img
 src="FRIDA_PensionInformation_OA3_german/resources/Case1_en.png">  
 <p>The customer can call the methode ```configureVisibleContracts()``` which returns the visible contracts if it succeeds. <br>

@@ -4,12 +4,18 @@ accessed by the DRI platform to perform the calcution using the contract data af
 specfic contract from the fetched list a calculation can be performed. All these steps require a token which has to be requested by the user beforehand from the identity providers of 
 the insurance companies. </p>
 
-<img src="FRIDA_PensionInformation_OA3_german/resources/User_en.png">     
+<img style="width:100%; height: auto;" src="FRIDA_PensionInformation_OA3_german/resources/User_en.png">     
 <p>This UML diagram describes the relationship between the client and the two platforms. He interacts with the DRI portal to calculate his pension.
 The DRI platform then queries the contracts via the customer platform. In addition to that, the customer is able to configure the visible contracts via the customer platform.</p>
 
+
+<img style="width:100%; height: auto;" src="FRIDA_PensionInformation_OA3_german/resources/Auth_en.png"> 
+<p> The authentication also is carried out by the incurance company identity provider. The DRI redirects to the relevant login portal. After a successful login the customer
+is redirected to the DRI and the token is saved for later use.<br>
+</p>
+
 ## Pension Calculation
-<img src="FRIDA_PensionInformation_OA3_german/resources/Case1_en.png">  
+<img style="width:100%; height: auto;" src="FRIDA_PensionInformation_OA3_german/resources/Case1_en.png">  
 <p>Before starting any calculation the user has to decide which contracts he wants to make accessible to the DRI on the customer portal.
 He can also access the pension cockpit of the DRI which then sends a request with a token to the customer portal. 
 If this process succeed the visible contracts get returned to the customer. </p> <br>
@@ -17,12 +23,8 @@ If this process succeed the visible contracts get returned to the customer. </p>
 selected contract from the customer portal with the method "requestMasterData(selectedContract, token)" the request contains the selected
 contract and a token, if this process succeeds the DRI recieves the master data and uses that data to calculate the pension amout, which then
 gets returned to the customer.</p>
- 
-## Authentication 
-<img src="FRIDA_PensionInformation_OA3_german/resources/Auth_en.png"> 
-<p> The authentication also is carried out by the incurance company identity provider. The DRI redirects to the relevant login portal. After a successful login the customer
-is redirected to the DRI and the token is saved for later use.<br>
-</p>
+  
+
 
 
 

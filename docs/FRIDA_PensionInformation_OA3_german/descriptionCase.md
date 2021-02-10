@@ -1,6 +1,5 @@
 ## Use-Case 1:
-<img
-src="FRIDA_PensionInformation_OA3_german/resources/Case1_en.png">  
+<img style="height: fit-content; width: auto;" src="FRIDA_PensionInformation_OA3_german/resources/Case1_en.png">  
 <p>The customer can call the methode ```configureVisibleContracts()``` which returns the visible contracts if it succeeds. <br>
 He can also access the pension cockpit of the DRI which then sends a request with a token to the customer portal. Does this process succeeds the visible contracts get
 returned to the customer. </p> <br>
@@ -10,7 +9,6 @@ selected contract from the customer portal with the method ```requestMasterData(
 contract and a token, if this process succeeds the DRI gets returned the master data and uses that data to calculate the pension amout, which then
 gets returned to the customer.<p>
 
-## Authentication 
 <img src="FRIDA_PensionInformation_OA3_german/resources/Auth_en.png"> 
 <p> The authentication also is carried out by the DRI platform, if the customer wants to configure his contracts he can do that on the DRI platform which then
 forwards the request to the customer portal which returns the login data to the customer.</p> <br>

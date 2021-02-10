@@ -23,8 +23,8 @@ paths:
     post:
       summary: Nutzt oAuth2     
       security:
-        description: 
-          $ref: './docs/FRIDA_PensionInformation_OA3_german/descriptionAuth.md' 
+        - description: 
+            $ref: './docs/FRIDA_PensionInformation_OA3_german/descriptionAuth.md' 
         - oAuth2:
           - RenteKalkulieren
               

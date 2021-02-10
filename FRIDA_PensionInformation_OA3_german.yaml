@@ -25,7 +25,7 @@ paths:
       security:
         - oAuth2:
           - RenteKalkulieren
-              description: 
+              description: |
                 $ref: './docs/FRIDA_PensionInformation_OA3_german/descriptionAuth.md' 
       tags:
       - Kalkulierung

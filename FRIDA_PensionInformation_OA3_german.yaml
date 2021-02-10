@@ -22,8 +22,7 @@ paths:
       summary: Nutzt oAuth2     
       security:
         - oAuth2:
-          - RenteKalkulieren
-              
+          - RenteKalkulieren              
       tags:
       - Kalkulierung
       operationId: berechneRente

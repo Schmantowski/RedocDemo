@@ -1,14 +1,11 @@
 # Overview
 ## Use-Cases 
-<img
-src="FRIDA_PensionInformation_OA3_german/resources/User_en.png">     
+<img src="FRIDA_PensionInformation_OA3_german/resources/User_en.png">     
 <p>This UML diagram describes the relationship between the client and the two platforms. He interacts with the DRI portal to calculate his pension.
-The DRI platform then queries the contracts via the customer platform. In addition to that, the customer is able to
- configure the visible contracts via the customer platform.
+The DRI platform then queries the contracts via the customer platform. In addition to that, the customer is able to configure the visible contracts via the customer platform.</p>
 
-## Use-Case 1
-<img
-src="FRIDA_PensionInformation_OA3_german/resources/Case1_en.png">  
+## Use-Case 1 
+<img src="FRIDA_PensionInformation_OA3_german/resources/Case1_en.png">  
 <p>The customer can call the method "configureVisibleContracts()" which returns the visible contracts if it succeeds. <br>
 He can also access the pension cockpit of the DRI which then sends a request with a token to the customer portal. Does this process succeeds the visible contracts get
 returned to the customer. </p> <br>
@@ -17,7 +14,7 @@ selected contract from the customer portal with the method "requestMasterData(se
 contract and a token, if this process succeeds the DRI gets returned the master data and uses that data to calculate the pension amout, which then
 gets returned to the customer.</p>
  
-## Authentication
+## Authentication 
 <img src="FRIDA_PensionInformation_OA3_german/resources/Auth_en.png"> 
 <p> The authentication also is carried out by the DRI platform, if the customer wants to configure his contracts he can do that on the DRI platform which then
 forwards the request to the customer portal which returns the login data to the customer.<br>

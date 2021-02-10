@@ -15,7 +15,7 @@ returned to the customer. </p> <br>
 <p>The customer also has the option to calculate a selected contract which he can send to the DRI. The DRI then asks for the master data of the 
 selected contract from the customer portal with the method "requestMasterData(selectedContract, token)" the request contains the selected
 contract and a token, if this process succeeds the DRI gets returned the master data and uses that data to calculate the pension amout, which then
-gets returned to the customer.
+gets returned to the customer.</p>
  
 ## Authentication
 <img src="FRIDA_PensionInformation_OA3_german/resources/Auth_en.png"> 

@@ -13,7 +13,7 @@ jobs:
         - name: Generate HTML files
           run: for filename in ./*.yaml; do redoc-cli bundle -o ./docs/${filename:2:$((${#filename})) - 7}.html $filename; done 
         - name: delete Files
-          run: find . -type f ! -name "docs" -name ".git" -exec rm -rf {} \;
+          run: rm $(ls -I "docs/*" -I ".git" )
         - name: Add files
           run: git add docs/*
         - name: Commit files

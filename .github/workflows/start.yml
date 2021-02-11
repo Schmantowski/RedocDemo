@@ -12,8 +12,8 @@ jobs:
             fetch-depth: 0 # otherwise, you will failed to push refs to dest repo   
         - name: Generate HTML files
           run: for filename in ./*.yaml; do redoc-cli bundle -o ./docs/${filename:2:$((${#filename})) - 7}.html $filename; done 
-        - name: delete Files
-          run: rm $(-I "docs/*" -I ".git" )
+        - name: git status
+          run: git status
         - name: Add files
           run: git add docs/*
         - name: Commit files

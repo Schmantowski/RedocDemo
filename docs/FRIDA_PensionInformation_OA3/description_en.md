@@ -14,6 +14,12 @@ The DRI platform then queries the contracts via the customer platform. In additi
 is redirected to the DRI and the token is saved for later use.<br>
 </p>
 
+## Security
+### Data in Transition
+
+
+### Data at Rest
+
 ## Pension Calculation
 <img style="width:100%; height: auto;" src="FRIDA_PensionInformation_OA3/resources/Case1_en.png">  
 <p>Before starting any calculation the user has to decide which contracts he wants to make accessible to the DRI on the customer portal.

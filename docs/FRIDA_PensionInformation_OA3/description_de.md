@@ -14,6 +14,30 @@ Die DRI-Plattform fragt dann die Verträge über die Kundenplattform ab. Darübe
 wird der Kunde zum DRI weitergeleitet und das Token wird für die spätere Verwendung gespeichert.<br>
 </p>
 
+## Security
+### Data in Transit
+Bei der Übertragung von Informationen über Kommunikationsnetze besteht die Gefahr, dass Informationen unbefugt abgehört oder unbefugt manipuliert werden. Um die Vertraulichkeit und die Integrität der Informationen sicherzustellen, müssen entsprechende Maßnahmen zur Absicherung der Übertragung ergriffen werden.
+FRIDA nutzt hierbei die Empfehlungen und den Mindeststandard gemäß dem Bundesamt für Informationssicherheit (BSI), wie hier definiert: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/CloudComputing/SecurityRecommendationsCloudComputingProviders.pdf und https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/TLS-Protokoll/TLS-Protokoll_node.html
+
+Entsprechend gelten folgende Mindeststandards für die Kommunikation: 
+* TLS > 1.2 in Kombination mit Perfect Forward Secrecy (PFS) 
+ * Ältere TLS oder SSL Versionen dürfen nicht eingesetzt werden
+ * Die Nutzung von HTTP Strict Transport Security (HSTS) wird empfohlen
+* Authentifizierung mittels OpenID Connect 1.0 (OIDC) und Autorisierung mittels OAuth 2.0
+ * Für Single-Page-Applikationen oder native mobile Applikationen: Authorization Code Grant mit PKCE
+ * Webanwendungen mit der Möglichkeit Kennwörter (client secret) sicher speichern zu können: Authorization Code Grant und optional PKCE
+ * Der Implicit Grant wird nicht empfohlen
+ * Der Password Grant darf nicht eingesetzt werden
+
+### Data at Rest
+Bei Data at Rest müssen Daten nach folgenden Kriterien sicher gespeichert und verarbeitet werden: 
+* Verschlüsselung
+* Datenschutz 
+* Datensicherung
+* Löschen und Vernichten
+
+Hierbei können die Richtlinien vom BSI eingsetzt werden: https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/IT-Grundschutz-Kompendium/IT-Grundschutz-Bausteine/Bausteine_Download_Edition_node.html
+
 ## Rentenberechnung
 <img style="width:100%; height: auto;" src="FRIDA_PensionInformation_OA3/resources/Case1_de.png">  
 <p>Vor dem Start einer Berechnung muss der Anwender entscheiden, welche Verträge er der BBS im Kundenportal zugänglich machen möchte.

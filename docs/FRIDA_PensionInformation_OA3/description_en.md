@@ -38,9 +38,6 @@ At Data at Rest, data must be securely stored and processed according to the fol
 
 Here the guidelines of the BSI can be used: https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/IT-Grundschutz-Kompendium/IT-Grundschutz-Bausteine/Bausteine_Download_Edition_node.html
 
-
-### Data at Rest
-
 ## Pension Calculation
 <img style="width:100%; height: auto;" src="FRIDA_PensionInformation_OA3/resources/Case1_en.png">  
 <p>Before starting any calculation the user has to decide which contracts he wants to make accessible to the DRI on the customer portal.

@@ -2,7 +2,7 @@
 <p>Der Frida PensionService ermöglicht es dem Kunden, eine Berechnung seiner Rente für einen bestimmten Vertrag durchzuführen. Dazu muss der Benutzer seine sichtbaren Verträge konfigurieren, auf die
 auf die die DRI-Plattform zugreift, um anschließend die Berechnung anhand der Vertragsdaten durchzuführen. Nach dieser Konfiguration sind die Verträge im Rentencockpit sichtbar. Nach Auswahl eines 
 bestimmten Vertrag aus der abgerufenen Liste kann eine Berechnung durchgeführt werden. Für all diese Schritte wird ein Token benötigt, das der Benutzer zuvor bei den Identitätsprovidern der Versicherungsgesellschaften anfordern muss. 
-der Versicherungsgesellschaften beantragt werden muss.</p>
+</p>
 
 <img style="width:100%; height: auto;" src="FRIDA_PensionInformation_OA3/resources/User_de.png">     
 <p>Dieses UML-Diagramm beschreibt die Beziehung zwischen dem Kunden und den beiden Plattformen. Er interagiert mit dem DRI-Portal, um seine Rente zu berechnen.

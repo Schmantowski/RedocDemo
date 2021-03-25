@@ -29,7 +29,7 @@ Entsprechend gelten folgende Mindeststandards für die Kommunikation:
  * Der Implicit Grant wird nicht empfohlen
  * Der Password Grant darf nicht eingesetzt werden
 
-### Data at Rest
+### Data at Rest und Data inside Network
 Bei Data at Rest müssen Daten nach folgenden Kriterien sicher gespeichert und verarbeitet werden: 
 * Verschlüsselung
 * Datenschutz 
@@ -37,6 +37,8 @@ Bei Data at Rest müssen Daten nach folgenden Kriterien sicher gespeichert und v
 * Löschen und Vernichten
 
 Hierbei können die Richtlinien vom BSI eingsetzt werden: https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/IT-Grundschutz-Kompendium/IT-Grundschutz-Bausteine/Bausteine_Download_Edition_node.html
+
+Um eine vollständige End-to-End Verschlüsselung gewährleisten zu können, müssen Maßnahmen zur Sicherung der Daten auch beim Anbieter der Daten (z.B. Versicherung) und des Dienstes sichergestellt werden. Dazu gehört sowohl eine sichere Speicherung der Daten, als auch die Nutzung von Verschlüsselung innerhalb des internen Netzwerks. Die Sicherstellung dieser Richtlinien ist nicht Teil der Spezifikation von FRIDA. 
 
 ## Rentenberechnung
 <img style="width:100%; height: auto;" src="FRIDA_PensionInformation_OA3/resources/Case1_de.png">  
